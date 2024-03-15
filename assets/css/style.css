@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    margin: 0;
+    background-color: #FFFDFD;
+    font-size: 1.2rem;
+    font-family: Rubik;
+}
+.bg-img{
+    padding-bottom: 0.5rem;
+    padding-top: 1.2rem;
+    text-align: center;
+    background-image: url("/assets/img/techno-dots-abstract-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #444;
+    color:#FFBC00;
+}
+
+.bg-img a{
+    color: #FFBC00;
+    text-decoration: none;
+}
+
+.bg-img .ativo{
+    color: #fff;
+    font-weight: bold;
+}
+
+.bg-img a{
+    margin-right: 1rem;
+}
+
+.bg-img h2{
+    margin-top: 10rem;
+}
+
+h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+span{
+    color: #FFBC00;
+}
+
+.sobre-titulo h2{
+    color: #fff;
+}
+
+.foto{
+    grid-area: foto;
+    border-radius: 1rem;
+    border: #444 solid 0.2rem;
+    margin-right: 1rem;
+    box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.35);
+    rotate: -5deg;
+}
+
+.resumo{
+    margin-top: 0.6rem;
+    grid-area: resumo;
+}
+
+.sobre{
+    max-width: 35rem;
+    margin: auto;
+    margin-top: 2rem;
+    align-items: center;
+    display: grid;
+    gap: 0.5rem;
+    grid-template: 
+    "foto resumo resumo"
+    "foto resumo resumo"
+    ;
+}
+
+
+.portfolio{
+    text-align: center;
+}
+
+.portfolio .cards-portfolio{
+    height: 20rem;
+    text-align: left;
+    background-color: #FFFDFD;
+    border: #444 solid 0.2rem;
+    border-radius: 1.3rem;
+    padding: 1rem;
+    margin: auto;
+    max-width: 20rem;
+    box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.15);
+}
+
+.portfolio img{
+    border-radius: 0.7rem;
+    max-height: 12rem;
+}
+
+.techs img{
+    border-radius: 0 !important;
+    text-align: right;
+}
+
+.techs{
+    text-align: right;
+}
+
+.techs img{
+    margin-left: 0.3rem;
+}
+
+h2{
+    margin-top: 3rem;
+}
+
+.github{
+    grid-area: github;
+}
+
+.linkedin{
+    grid-area: linkedin;
+}
+
+.redes{ 
+    max-width: 40rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    grid-template: 
+    "github linkedin"
+    "github linkedin"
+    ;
+}
+
+.redes a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    padding: 1rem;
+    
+}
+
+.navbar-toggler{
+    border: none;
+}
