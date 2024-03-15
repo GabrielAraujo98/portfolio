@@ -22,6 +22,7 @@ body{
 .bg-img a{
     color: #FFBC00;
     text-decoration: none;
+    margin-right: 1rem;
 }
 
 .bg-img .ativo{
@@ -29,19 +30,14 @@ body{
     font-weight: bold;
 }
 
-.bg-img a{
-    margin-right: 1rem;
-}
-
 .bg-img h2{
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 h2{
     text-align: center;
     font-weight: bolder;
 }
-
 
 span{
     color: #FFBC00;
@@ -58,6 +54,7 @@ span{
     margin-right: 1rem;
     box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.35);
     rotate: -5deg;
+    padding: 0.5rem;
 }
 
 .resumo{
@@ -78,21 +75,26 @@ span{
     ;
 }
 
-
 .portfolio{
     text-align: center;
 }
 
 .portfolio .cards-portfolio{
-    height: 20rem;
+    height: 22rem;
     text-align: left;
     background-color: #FFFDFD;
     border: #444 solid 0.2rem;
+    display: inline-table;
     border-radius: 1.3rem;
     padding: 1rem;
-    margin: auto;
+    margin: 2rem;
     max-width: 20rem;
     box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.15);
+}
+
+.cards-portfolio h4{
+    color: black;
+    margin-top: 1rem;
 }
 
 .portfolio img{
@@ -100,18 +102,21 @@ span{
     max-height: 12rem;
 }
 
+.portfolio .techs{
+    justify-items: end;
+}
+
 .techs img{
     border-radius: 0 !important;
     text-align: right;
+    margin-left: 0.3rem;
 }
 
 .techs{
     text-align: right;
 }
 
-.techs img{
-    margin-left: 0.3rem;
-}
+
 
 h2{
     margin-top: 3rem;
@@ -150,4 +155,17 @@ h2{
 
 .navbar-toggler{
     border: none;
+}
+
+.card-ver-mais{
+    text-decoration: none;
+    color: #fff !important;
+    text-align: center;
+    background-color: #444;
+    border: #444 solid 0.2rem;
+    border-radius: 1.3rem;
+    padding: 1rem;
+    margin: auto;
+    width: 10rem;
+    box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.15);
 }
