@@ -169,3 +169,56 @@ h2{
     width: 10rem;
     box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.15);
 }
+.centralizar-contato{
+    padding: 2rem;
+    vertical-align: middle;
+}
+.contatos{
+    max-width: 45rem;
+    margin: auto;
+    display: grid;
+    margin-top: 20dvh;
+    grid-template: 
+    "titulo titulo titulo titulo"
+    "imgcontato contato contato contato"
+    "imgcontato contato contato contato"
+    ;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contatos h2{
+    grid-area: titulo;
+}
+
+.contatos .img-contato{
+    grid-area: imgcontato;
+    border-radius: 1rem;
+    box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.35);
+    max-width: 15rem;
+}
+
+.form-contato{
+    grid-area: contato;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    background-color: #FFFDFD;
+    border: #444 solid 0.2rem;
+    border-radius: 1.3rem;
+    padding: 1rem;
+    box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.15);
+}
+
+
+.redes-contato{
+    max-width: 40rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.redes-contato a{
+    text-decoration: none;
+    color: black;
+}
