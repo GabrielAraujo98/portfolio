@@ -116,8 +116,6 @@ span{
     text-align: right;
 }
 
-
-
 h2{
     margin-top: 3rem;
 }
@@ -141,12 +139,34 @@ h2{
     "github linkedin"
     "github linkedin"
     ;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 .redes a{
     text-decoration: none;
     color: black;
+}
+
+.github-rodape{
+    grid-area: githubrodape;
+}
+
+.linkedin-rodape{
+    grid-area: linkedinrodape;
+}
+
+.redes-rodape{
+    max-width: 30rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    gap: 0.5rem;
+    grid-template: 
+    "githubrodape linkedinrodape"
+    "githubrodape linkedinrodape"
+    ;
 }
 
 .navbar{
@@ -224,3 +244,11 @@ h2{
     color: black;
 }
 
+.criado-por-gabriel{
+    margin-top: 1rem;
+    border-top: #FFBC00 solid 1px;
+}
+
+.criado-por-gabriel p{
+    margin-top: 1rem;
+}
