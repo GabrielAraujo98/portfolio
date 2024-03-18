@@ -36,6 +36,10 @@
     padding-top: 8px;
   }
 
+  .timeline-horizontal .items .items-list .largo {
+    width: 200px;
+  }
+
   .ultimo{
     padding-bottom: 7%;
 }
@@ -44,6 +48,10 @@
     .timeline-horizontal{
         margin-top: 7%;
         margin-bottom: 0px;
+    }
+
+    .experiencia{
+        margin-top: 15%;
     }
 
     .ultimo{
