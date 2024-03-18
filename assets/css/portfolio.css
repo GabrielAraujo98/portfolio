@@ -18,3 +18,8 @@
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
+
+.projeto a{
+    color: black;
+    font-style: italic;
+}

@@ -78,6 +78,9 @@ span{
 .portfolio{
     text-align: center;
 }
+.portfolio .link-para-portfolio{
+    text-decoration: none;
+}
 
 .portfolio .cards-portfolio{
     height: 22rem;
