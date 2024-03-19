@@ -255,3 +255,60 @@ h2{
 .criado-por-gabriel p{
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 1140px){
+
+    .foto{
+        margin: auto;
+    }
+
+    .sobre{
+        max-width: 27rem;
+        margin: auto;
+        margin-top: 2rem;
+        align-items: center;
+        display: grid;
+        gap: 0.5rem;
+        grid-template: 
+        "foto"
+        "resumo"
+        ;
+        text-align: center;
+    }
+
+
+    .contatos{
+        max-width: 45rem;
+        margin: auto;
+        display: grid;
+        margin-top: 18%;
+        grid-template: 
+        "titulo titulo"
+        "imgcontato imgcontato"
+        "contato contato"
+        ;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .redes{
+        padding-top: 1rem;
+        padding-bottom: 22%;
+        max-width: 40rem;
+        margin: auto;
+        margin-bottom: 2rem;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+        grid-template: 
+        "github"
+        "linkedin"
+        ;
+    }
+
+    .contatos .img-contato{
+        margin: auto;
+    }
+
+
+}

@@ -23,3 +23,14 @@
     color: black;
     font-style: italic;
 }
+
+@media screen and (max-width: 1140px){
+    .projetos-portfolio{
+        padding: 2rem;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 10%;
+        padding-bottom: 22%;
+        padding-top: 18%;
+    }
+}
