@@ -268,7 +268,7 @@ h2{
         margin-top: 2rem;
         align-items: center;
         display: grid;
-        gap: 0.5rem;
+        gap: 1.3rem;
         grid-template: 
         "foto"
         "resumo"
@@ -293,7 +293,7 @@ h2{
 
     .redes{
         padding-top: 1rem;
-        padding-bottom: 22%;
+        padding-bottom: 10rem;
         max-width: 40rem;
         margin: auto;
         margin-bottom: 2rem;
