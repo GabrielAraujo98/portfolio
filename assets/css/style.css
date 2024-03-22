@@ -256,6 +256,16 @@ h2{
     margin-top: 1rem;
 }
 
+.modal-content{
+    background-color: #FFFDFD;
+    border-radius: 20px;
+}
+
+.modal-body{
+    border-top: #FFBC00 solid 4px;
+    text-align: left;
+}
+
 @media screen and (max-width: 1140px){
 
     .foto{
