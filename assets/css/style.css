@@ -272,6 +272,13 @@ h2{
     display: grid;
     margin-top: 20dvh;
     align-items: center;
+    padding: 2rem;
+}
+
+#limpar-msgs{
+    align-items: center;
+    margin: auto;
+    width: 12rem;
 }
 
 @media screen and (max-width: 1140px){
