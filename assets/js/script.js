@@ -1,9 +1,35 @@
-const email = document.querySelector("#email");
-const mensagem = document.querySelector("#mensagem");
+const emailDoForm = document.querySelector("#email");
+const mensagemDoForm = document.querySelector("#mensagem");
 const botaoEnviar = document.querySelector("#enviar");
 
-botaoEnviar.addEventListener("submit", (e) => {
+const mensagensEnviadas = new Object( [
+    {
+        email : "teste",
+        mensagem : "teste"
+    }
+] )
+
+botaoEnviar.addEventListener("click", (e) => {
     e.preventDefault();
 
-    console.log("funcionando");
+    if(mensagensEnviadas.length == 1 && mensagensEnviadas[0].email === "teste"){
+        mensagensEnviadas.push(
+            {
+                email : emailDoForm.value,
+                mensagem : mensagemDoForm.value
+            }
+        )
+        mensagensEnviadas.shift()
+    }else{
+        mensagensEnviadas.push(
+            {
+                email : emailDoForm.value,
+                mensagem : mensagemDoForm.value
+            }
+        )
+    }
+    console.log(mensagensEnviadas)
 })
+
+
+
