@@ -266,6 +266,14 @@ h2{
     text-align: left;
 }
 
+.titulo-msgs{
+    max-width: 45rem;
+    margin: auto;
+    display: grid;
+    margin-top: 20dvh;
+    align-items: center;
+}
+
 @media screen and (max-width: 1140px){
 
     .foto{

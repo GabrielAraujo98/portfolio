@@ -1,13 +1,16 @@
 const emailDoForm = document.querySelector("#email");
 const mensagemDoForm = document.querySelector("#mensagem");
 const botaoEnviar = document.querySelector("#enviar");
+const botaoVisualizar = document.querySelector("#visualizar-msg");
+
+const todasAsMensagens = document.querySelector("#msgs-enviadas");
 
 const mensagensEnviadas = new Object( [
     {
         email : "teste",
         mensagem : "teste"
     }
-] )
+] );
 
 botaoEnviar.addEventListener("click", (e) => {
     e.preventDefault();
@@ -18,18 +21,18 @@ botaoEnviar.addEventListener("click", (e) => {
                 email : emailDoForm.value,
                 mensagem : mensagemDoForm.value
             }
-        )
-        mensagensEnviadas.shift()
+        );
+        mensagensEnviadas.shift();
+        botaoVisualizar.setAttribute("class", "btn btn-dark visible");
     }else{
         mensagensEnviadas.push(
             {
                 email : emailDoForm.value,
                 mensagem : mensagemDoForm.value
             }
-        )
-    }
-    console.log(mensagensEnviadas)
+        );
+    };
+    emailDoForm.value = "";
+    mensagemDoForm.value = "";
+    console.log(mensagensEnviadas);
 })
-
-
-
