@@ -57,7 +57,7 @@ window.addEventListener('load', () => {
         for(var i = 0; i < arrayDeMensagens.length; i++){
             mensagensEnviadas.push(arrayDeMensagens[i]);
         }
-        
+        botaoVisualizar.setAttribute("class", "btn btn-dark visible");
         mensagensEnviadas.shift();
     }
 });
