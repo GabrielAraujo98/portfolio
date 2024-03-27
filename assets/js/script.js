@@ -12,38 +12,52 @@ const mensagensEnviadas = new Object( [
     }
 ] );
 
-
 botaoEnviar.addEventListener("click", (e) => {
-    e.preventDefault();
     
-    if(mensagensEnviadas.length == 1 && mensagensEnviadas[0].email === "teste"){
-        mensagensEnviadas.push(
-            {
-                email : emailDoForm.value,
-                mensagem : mensagemDoForm.value
-            }
+    e.preventDefault();
+
+        if(mensagensEnviadas[0].email === "teste"){
+            mensagensEnviadas.push(
+                {
+                    email : emailDoForm.value,
+                    mensagem : mensagemDoForm.value
+                }
             );
             mensagensEnviadas.shift();
             botaoVisualizar.setAttribute("class", "btn btn-dark visible");
-            
-    }else{
-        
-        mensagensEnviadas.push(
-            {
-                email : emailDoForm.value,
-                mensagem : mensagemDoForm.value
-            }
+        }else{
+            mensagensEnviadas.push(
+                {
+                    email : emailDoForm.value,
+                    mensagem : mensagemDoForm.value
+                }
             );
-    };  
-            
-    localStorage.setItem('mensagensEnviadasJSON', JSON.stringify(mensagensEnviadas));
+            botaoVisualizar.setAttribute("class", "btn btn-dark visible");
+        };
+
+        emailDoForm.value = "";
+        mensagemDoForm.value = "";
     
-    const stringDeMensagens = localStorage.getItem('mensagensEnviadasJSON');
-    const mensagensSalvas = JSON.parse(stringDeMensagens);
+        localStorage.setItem('mensagensEnviadasJSON', JSON.stringify(mensagensEnviadas));
+        const stringDeMensagens = localStorage.getItem('mensagensEnviadasJSON');
+        const mensagensSalvas = JSON.parse(stringDeMensagens);
+
+        console.log(stringDeMensagens, mensagensSalvas)
+        
+        console.log(mensagensEnviadas);
     
-    console.log(stringDeMensagens, mensagensSalvas)
-    
-    emailDoForm.value = "";
-    mensagemDoForm.value = "";
-    console.log(mensagensEnviadas);
 })
+
+window.addEventListener('load', () => {
+    const mensagensAtuais = localStorage.getItem('mensagensEnviadasJSON');
+
+    if(JSON.parse(mensagensAtuais).email !== "teste" ){
+        const arrayDeMensagens = JSON.parse(mensagensAtuais);
+
+        for(var i = 0; i < arrayDeMensagens.length; i++){
+            mensagensEnviadas.push(arrayDeMensagens[i]);
+        }
+        
+        mensagensEnviadas.shift();
+    }
+});

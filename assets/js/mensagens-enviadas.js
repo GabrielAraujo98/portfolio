@@ -1,5 +1,6 @@
 const asMensagens = document.querySelector("#msgs-enviadas");
 const botaoLimparMensagens = document.querySelector("#limpar-msgs");
+const botaoVoltarContato = document.querySelector("#voltar-contato");
 
 const stringdoLocaStorage = localStorage.getItem('mensagensEnviadasJSON')     
 const mensagensSalvas = JSON.parse(stringdoLocaStorage);
