@@ -1,9 +1,9 @@
 const emailDoForm = document.querySelector("#email");
 const mensagemDoForm = document.querySelector("#mensagem");
 const botaoEnviar = document.querySelector("#enviar");
-const botaoVisualizar = document.querySelector("#visualizar-msg");
+const botaoLimparMsgs = document.querySelector("#limpar-msgs");
 
-const todasAsMensagens = document.querySelector("#msgs-enviadas");
+const botaoVisualizar = document.querySelector("#visualizar-msg");
 
 const mensagensEnviadas = new Object( [
     {
@@ -12,26 +12,37 @@ const mensagensEnviadas = new Object( [
     }
 ] );
 
+
 botaoEnviar.addEventListener("click", (e) => {
     e.preventDefault();
-
+    
     if(mensagensEnviadas.length == 1 && mensagensEnviadas[0].email === "teste"){
         mensagensEnviadas.push(
             {
                 email : emailDoForm.value,
                 mensagem : mensagemDoForm.value
             }
-        );
-        mensagensEnviadas.shift();
-        botaoVisualizar.setAttribute("class", "btn btn-dark visible");
+            );
+            mensagensEnviadas.shift();
+            botaoVisualizar.setAttribute("class", "btn btn-dark visible");
+            
     }else{
+        
         mensagensEnviadas.push(
             {
                 email : emailDoForm.value,
                 mensagem : mensagemDoForm.value
             }
-        );
-    };
+            );
+    };  
+            
+    localStorage.setItem('mensagensEnviadasJSON', JSON.stringify(mensagensEnviadas));
+    
+    const stringDeMensagens = localStorage.getItem('mensagensEnviadasJSON');
+    const mensagensSalvas = JSON.parse(stringDeMensagens);
+    
+    console.log(stringDeMensagens, mensagensSalvas)
+    
     emailDoForm.value = "";
     mensagemDoForm.value = "";
     console.log(mensagensEnviadas);

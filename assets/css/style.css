@@ -270,7 +270,7 @@ h2{
     max-width: 45rem;
     margin: auto;
     display: grid;
-    margin-top: 20dvh;
+    margin-top: 5rem;
     align-items: center;
     padding: 2rem;
 }
@@ -279,6 +279,7 @@ h2{
     align-items: center;
     margin: auto;
     width: 12rem;
+    margin-bottom: 8rem;
 }
 
 @media screen and (max-width: 1140px){
