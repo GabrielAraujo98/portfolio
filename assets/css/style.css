@@ -223,6 +223,8 @@ h2{
 }
 
 .form-contato{
+    width: 400px;
+    margin: 0px auto;
     grid-area: contato;
     text-decoration: none;
     color: black;
@@ -230,10 +232,13 @@ h2{
     background-color: #FFFDFD;
     border: #444 solid 0.2rem;
     border-radius: 1.3rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     box-shadow: 0.8rem 0.8rem 2rem -0.3rem rgba(0,0,0,0.15);
 }
 
+.form-title{
+    text-align: center;
+}
 
 .redes-contato{
     max-width: 40rem;
@@ -309,9 +314,9 @@ h2{
         display: grid;
         margin-top: 18%;
         grid-template: 
-        "titulo titulo"
-        "imgcontato imgcontato"
-        "contato contato"
+        "titulo"
+        "imgcontato"
+        "contato"
         ;
         gap: 2rem;
         align-items: center;
@@ -337,4 +342,20 @@ h2{
     }
 
 
+}
+
+@media screen and (max-width: 500px){
+
+    .form-contato{
+        max-width: 300px;
+        padding: 1rem;
+    }
+
+    .form-contato img{
+        width: 20px;
+    }
+
+    .form-label{
+        font-size: 18px;
+    }
 }
